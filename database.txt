@@ -1,0 +1,16 @@
+create database intohj;
+
+use intohj;
+
+create table customers(
+id_customers INT primary key,
+fname VARCHAR(40),
+lname VARCHAR(40)
+) Engine=InnoDB;
+
+insert into customers values(1, 'Jim', 'Smith');
+insert into customers values(2, 'Jill', 'Smith');
+insert into customers values(3, 'Lisa', 'Jones');
+insert into customers values(4, 'Bob', 'Brown');
+
+GRANT ALL ON intohj.* TO 'phpUser'@'localhost' IDENTIFIED BY 'phpPass';
