@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['logged_in'])) {
+header('Location:not_logged.php');
+}
+ ?>
 <?php include "menu.php"; ?>
 <?php include "connection.php"; ?>
 	<h2>Database</h2>
