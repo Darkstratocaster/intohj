@@ -1,5 +1,5 @@
 <?php include "menu.php"; ?>
-<?php include "connection.php"; ?>
+
 <?php
 //print_r($_POST);
 //echo '<br>';
